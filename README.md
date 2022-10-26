@@ -108,5 +108,18 @@ for county_name in county_votes:
   In Summary, the election audit script has been prepared which is user friendly, the code has been formatted appropriately and comments are included in every place where it is needed to easily guide the developer who is looking at the code to make any new changes. This is essential for any software application since it will help in adding any new functionlities within less amount time on top of the existing one and refactoring would be minimal.  
         
   The script can be easily modified to include any additonal details of election results.
-For example , in this challenge, for displaying the county results in additon to candidate results, we had to include simailar calculations and analysis for the county next to the candidate details. 
-  Given this data, the developer can re-use the same piece code and can derive any additonal details which might be needed later on!
+  
+  **Example 1:**
+  
+  If there is a new column added in the input csv file and we need to calculate and process that field , list of things that can be done easily in the code with which, the developer can easily re-use the same piece code and can derive any additonal details which might be needed later on!
+  
+   - initialize the appropriate list and dictionaries in the code initalizations area
+   - get the new field from csv file along with others in the *with open(file_to_load)* section
+   - do the calulations which are needed for it based of the options 
+   - write to file output in *with open(file_to_save, "w") * section
+     
+   **Example 2:**
+   
+   If we need to change some calulations for any field later on, the comments and code formatting would easily guide to the appropriate place and the developer and modify with appropraite details.
+
+  Finally, we have presented all the required and the additional county details for the election audit of a recent local congressional election.
